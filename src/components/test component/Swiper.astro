@@ -1,0 +1,133 @@
+---
+// src/pages/swiper.astro
+import { Card, Pill } from "@eliancodes/brutal-ui";
+
+import caroussel from "src/styles/caroussel.scss";
+const clients = [
+  {
+    name: "Claire Le Marechal",
+    url: "https://www.clairelemarechal.com/",
+
+    image: "src/assets/Claire.png",
+  },
+  {
+    name: "French school",
+    url: "https://cfkairouan.com/",
+    image: "src/assets/kairouan.png",
+  },
+  {
+    name: "Otos-lab, agency",
+    url: "https://www.otos-lab.fr/",
+    image: "src/assets/otos.png",
+  },
+  {
+    name: "Siera Paris",
+    url: "https://siera.paris/",
+    image: "src/assets/bijouxvintage.png",
+  },
+  {
+    name: "Price and Go",
+    url: "#",
+    image: "src/assets/Dashboards.png",
+  },
+  {
+    name: "Content creator AI",
+    url: "",
+    image: "src/assets/contentai.jpg",
+  }
+  
+];
+
+
+---
+
+
+
+
+<div class="slider">
+	<div class="slide-track">
+{clients.map((client) => (
+  <div class="slide">
+   
+      <div class="p-4 bg-green border-4 border-black ">
+        <img src={client.image} alt={client.name} class="mb-8 border-4 border-black object-fit w-full h-48"/>
+     
+        <Pill ><a href={client.url} target="_blank" >{client.name}</a></Pill>
+      </div>
+    
+  </div>
+))}
+	{clients.map((client) => (
+    <div class="slide ">
+     
+      <div class="p-4 bg-green border-4 border-black  ">
+        <img src={client.image} alt={client.name} class="mb-8 border-4 border-black object-fit w-full h-48"/>
+     
+        <Pill ><a href={client.url} target="_blank" >{client.name}</a></Pill>
+      </div>
+      
+    </div>
+  ))}
+		
+	</div>
+</div>
+<style>
+  /* White Gradient Mixin */
+
+
+/* Animation Keyframes */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+/* Styling */
+.slider {
+
+  background-color: transparent;
+  height: 400px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 1080px;
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+  
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+ 
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  margin: 0 20px;
+}
+
+</style>
