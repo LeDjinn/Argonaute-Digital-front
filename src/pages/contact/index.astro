@@ -1,0 +1,106 @@
+---
+import { Button } from "@eliancodes/brutal-ui";
+import Card from "../../components/original components/Card.astro";
+import Layout from "../../layouts/Default.astro";
+import SwiperApi from "../../components/test component/SwiperApi.astro";
+---
+
+<Layout
+  title="Home"
+  pageTitle="Argonaute Dgital | Home"
+  description="Empowering businesses with cutting-edge software solutions."
+>
+<main class="p-6">
+    <section class="mb-8 grid md:grid-cols-8 gap-8 mt-4">
+      <div class="col-span-6">
+        <Card>
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h1 class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
+              Get in touch with <span class="text-white">Argonaute Digital</span>
+            </h1>
+          </div>
+        </Card>
+        <div class="mb-8"></div>
+        <Card>
+          <div class="flex justify-around col-span-8">
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo blue.svg"
+              width="124px"
+              alt="logo"
+            />
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo pink.svg"
+              width="124px"
+              alt="logo"
+            />
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo yellow.svg"
+              width="124px"
+              alt="logo"
+            />
+          </div>
+        </Card>
+      </div>
+    </section>
+    <section class="mb-8 grid md:grid-cols-8 gap-4 mt-8">
+      <div class="col-span-6">
+        <Card>
+          <h2 class="col-span-6 text-center">Contact us </h2>
+        </Card>
+      </div>
+      <div class="col-span-6">
+        <Card>
+          <h2 class="col-span-8 text-center text-white">
+            A Tale of Innovation and Global Impact
+          </h2>
+          <div class="p-24 ">
+            <p class="text-justify">
+              <!-- Existing about us content... -->
+  
+              <!-- Contact Form -->
+              <h2 class="text-3xl font-bold mb-4 text-white">Contact Us</h2>
+              <form action="/submit-contact" method="post" class="mb-4">
+                <div class="mb-4">
+                  <label for="name" class="block text-white">Name:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="border border-white p-2 w-full"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="email" class="block text-white">Email:</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="border border-white p-2 w-full"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <label for="message" class="block text-white">Message:</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="border border-white p-2 w-full"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+              <Button target={"_self"} href="/contact/" color="black" >
+                send message
+              </Button>
+                  
+              
+              </form>
+            </p>
+          </div>
+        </Card>
+      </div>
+    </section>
+  </main>
+  
+</Layout>

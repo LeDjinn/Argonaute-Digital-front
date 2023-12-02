@@ -1,0 +1,82 @@
+---
+import { Button } from "@eliancodes/brutal-ui";
+import Card from "../../components/original components/Card.astro";
+import Layout from "../../layouts/Default.astro";
+import SwiperApi from "../../components/test component/SwiperApi.astro";
+---
+
+<Layout
+  title="Home"
+  pageTitle="Argonaute Dgital | Home"
+  description="Empowering businesses with cutting-edge software solutions."
+>
+  <main class="p-6">
+    <section class="mb-8 grid md:grid-cols-8 gap-8 mt-4">
+      <div class="col-span-6">
+        <Card>
+          <div class="flex flex-col justify-between items-start gap-4">
+            <h1 class="mt-4 outfit text-2xl md:text-5xl lg:text-7xl">
+              We are <span class="text-white">Argonaute Digital</span>
+            </h1>
+          </div>
+        </Card>
+        <div class="mb-8"></div>
+        <Card>
+          <div class="flex justify-around col-span-8">
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo blue.svg"
+              width="124px"
+              alt="logo"
+            />
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo pink.svg"
+              width="124px"
+              alt="logo"
+            />
+            <img
+              src="https://argonaute-digital.com/images/assets/robotlogo yellow.svg"
+              width="124px"
+              alt="logo"
+            />
+          </div>
+        </Card>
+      </div>
+    </section>
+    <section class="mb-8 mb-8 grid md:grid-cols-8 gap-4 mt-8">
+      <div class="col-span-6">
+        <Card>
+          <h2 class="col-span-6 text-center">About us</h2>
+        </Card>
+      </div>
+      <div class="col-span-6">
+        <Card>
+          <h2 class="col-span-8 text-center text-white">
+            A Tale of Innovation and Global Impact
+          </h2>
+          <div class="p-24 text-white">
+            <p class="text-justify">
+              Established in the vibrant year of 2023, Argonaute Digital is the
+              brainchild of our visionary leader, Timour Spiridonov. Hailing
+              from Tunisia, Timour embarked on a mission to create a digital
+              haven that transcends borders, impacting businesses worldwide. At
+              Argonaute Digital, we believe in breaking down geographical
+              barriers, operating not just in Tunisia but making our mark in
+              every corner of the globe. Our commitment to excellence and
+              innovation knows no bounds, and our reach extends as far as the
+              digital landscape stretches. Our diverse team is the heartbeat of
+              our success. Comprising talented designers, front-end enthusiasts,
+              and backend engineers, we operate as a united force, weaving
+              creativity and technical prowess into every project we undertake.
+              Each member brings a unique set of skills and perspectives,
+              creating a dynamic environment where innovation thrives. Join us
+              on this remarkable journey as we continue to redefine digital
+              experiences, one project at a time. From Tunisia to the world,
+              Argonaute Digital is not just a company; it's a testament to the
+              power of global collaboration and digital innovation.
+            </p>
+          </div>
+        </Card>
+      </div>
+    </section>
+  </main>
+</Layout>
