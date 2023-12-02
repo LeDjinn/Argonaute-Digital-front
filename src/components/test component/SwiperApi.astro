@@ -4,36 +4,27 @@ import { Card, Pill } from "@eliancodes/brutal-ui";
 
 import caroussel from "https://argonaute-digital.com/images/styles/caroussel.scss";
 const clients = [
+ 
   {
-    name: "Claire Le Marechal",
-    url: "https://www.clairelemarechal.com/",
-
-    image: "https://argonaute-digital.com/images/assets/Claire.png",
-  },
-  {
-    name: "French school",
+    name: "mailchimp integration",
     url: "https://cfkairouan.com/",
-    image: "https://argonaute-digital.com/images/assets/kairouan.png",
+    image: "https://argonaute-digital.com/images/assets/mailchimp.png",
   },
   {
-    name: "Otos-lab, agency",
+    name: "notion integration",
     url: "https://www.otos-lab.fr/",
-    image: "https://argonaute-digital.com/images/assets/otos.png",
+    image: "https://argonaute-digital.com/images/assets/notion.png",
   },
+
   {
-    name: "Siera Paris",
-    url: "https://siera.paris/",
-    image: "https://argonaute-digital.com/images/assets/bijouxvintage.png",
-  },
-  {
-    name: "Price and Go",
+    name: "Chat GPT integration",
     url: "#",
-    image: "https://argonaute-digital.com/images/assets/Dashboards.png",
+    image: "https://argonaute-digital.com/images/assets/OpenAI.png",
   },
   {
-    name: "Content creator AI",
+    name: "Slack integration",
     url: "",
-    image: "https://argonaute-digital.com/images/assets/contentai.jpg",
+    image: "https://argonaute-digital.com/images/assets/slack.png",
   }
   
 ];
@@ -49,23 +40,20 @@ const clients = [
 {clients.map((client) => (
   <div class="slide">
    
-      <div class="p-4 bg-green border-4 border-black ">
+      
         <img src={client.image} alt={client.name} class="mb-8 border-4 border-black object-contain w-full  "/>
      
-        <Pill ><a href={client.url} target="_blank" >{client.name}</a></Pill>
-      </div>
+
     
   </div>
 ))}
 	{clients.map((client) => (
     <div class="slide ">
      
-      <div class="p-4 bg-green border-4 border-black  ">
+    
         <img src={client.image} alt={client.name} class="mb-8 border-4 border-black object-contain w-full "/>
      
-        <Pill ><a href={client.url} target="_blank" >{client.name}</a></Pill>
-      </div>
-      
+
     </div>
   ))}
 		
@@ -89,11 +77,11 @@ const clients = [
 .slider {
 
   background-color: transparent;
-  height: 400px;
+  height: 200px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 1080px;
+  width: 300px;
 }
 
 .slider::before,
