@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  background-image: url('https://argonaute-digital-front-ky5z.vercel.app/images/assets/robotlogo.svg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+  background-image: url('https://argonaute-digital.com/images/assets/robotlogo.svg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
   background-repeat: repeat;
   background-size: 4px; 
 }
